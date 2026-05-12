@@ -1,4 +1,5 @@
 import { AboutSection } from "@/components/portfolio/AboutSection";
+import { BlogsSection } from "@/components/portfolio/BlogsSection";
 import { ContactSection } from "@/components/portfolio/ContactSection";
 import { Hero } from "@/components/portfolio/Hero";
 import { MarqueeStrip } from "@/components/portfolio/MarqueeStrip";
@@ -23,6 +24,7 @@ export default function Home() {
         <AboutSection />
         <SkillsSection />
         <ServicesSection />
+        <BlogsSection />
         <ContactSection />
       </main>
 

@@ -3,6 +3,7 @@ import "./globals.css";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.siteUrl),
   title: site.title,
   description: site.description,
 };
