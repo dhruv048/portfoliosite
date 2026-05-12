@@ -13,13 +13,18 @@ export interface ParallaxStarsBackgroundProps {
   showTitle?: boolean;
 }
 
-function generateBoxShadows(n: number) {
-  let value = `${Math.floor(Math.random() * 2000)}px ${Math.floor(Math.random() * 2000)}px #FFF`;
+function generateBoxShadows(n: number, color: string) {
+  let value = `${Math.floor(Math.random() * 2000)}px ${Math.floor(Math.random() * 2000)}px ${color}`;
   for (let i = 2; i <= n; i++) {
-    value += `, ${Math.floor(Math.random() * 2000)}px ${Math.floor(Math.random() * 2000)}px #FFF`;
+    value += `, ${Math.floor(Math.random() * 2000)}px ${Math.floor(Math.random() * 2000)}px ${color}`;
   }
   return value;
 }
+/** Light-theme starfield: darker + larger dots with opacity */
+const STAR_SMALL = "rgba(107, 105, 102, 0.3)";
+const STAR_MEDIUM = "rgba(82, 80, 77, 0.5)";
+const STAR_BIG = "rgba(61, 58, 55, 0.6)";
+
 
 type ShadowSet = { small: string; medium: string; big: string };
 
@@ -37,9 +42,9 @@ export function ParallaxStarsBackground({
     // Some browsers (notably Safari) can silently drop extremely large `box-shadow`
     // declarations. Keep these counts conservative for broad compatibility.
     setShadows({
-      small: generateBoxShadows(350),
-      medium: generateBoxShadows(140),
-      big: generateBoxShadows(70),
+      small: generateBoxShadows(350, STAR_SMALL),
+      medium: generateBoxShadows(140, STAR_MEDIUM),
+      big: generateBoxShadows(70, STAR_BIG),
     });
   }, []);
 
@@ -54,7 +59,7 @@ export function ParallaxStarsBackground({
 
   return (
     <div
-      className={`relative min-h-screen w-full bg-[#090A0F] ${className}`}
+      className={`relative min-h-screen w-full bg-surface-50 ${className}`}
     >
       {/*
         Do not use overflow-hidden here: CSS clips box-shadow on the star
@@ -65,7 +70,7 @@ export function ParallaxStarsBackground({
       {shadows && (
         <>
           <div
-            className="parallax-stars-anim pointer-events-none absolute left-0 top-0 z-[5] h-px w-px bg-transparent"
+            className="parallax-stars-anim pointer-events-none absolute left-0 top-0 z-[5] h-[2px] w-[2px] bg-transparent"
             style={{
               boxShadow: shadows.small,
               animation: `anim-star ${durations.small} linear infinite`,
@@ -73,13 +78,13 @@ export function ParallaxStarsBackground({
             }}
           >
             <div
-              className="absolute top-[2000px] h-px w-px bg-transparent"
+              className="absolute top-[2000px] h-[2px] w-[2px] bg-transparent"
               style={{ boxShadow: shadows.small }}
             />
           </div>
 
           <div
-            className="parallax-stars-anim pointer-events-none absolute left-0 top-0 z-[5] h-0.5 w-0.5 bg-transparent"
+            className="parallax-stars-anim pointer-events-none absolute left-0 top-0 z-[5] h-[4px] w-[4px] bg-transparent"
             style={{
               boxShadow: shadows.medium,
               animation: `anim-star ${durations.medium} linear infinite`,
@@ -87,13 +92,13 @@ export function ParallaxStarsBackground({
             }}
           >
             <div
-              className="absolute top-[2000px] h-0.5 w-0.5 bg-transparent"
+              className="absolute top-[2000px] h-[4px] w-[4px] bg-transparent"
               style={{ boxShadow: shadows.medium }}
             />
           </div>
 
           <div
-            className="parallax-stars-anim pointer-events-none absolute left-0 top-0 z-[5] h-[3px] w-[3px] bg-transparent"
+            className="parallax-stars-anim pointer-events-none absolute left-0 top-0 z-[5] h-[6px] w-[6px] bg-transparent"
             style={{
               boxShadow: shadows.big,
               animation: `anim-star ${durations.big} linear infinite`,
@@ -101,7 +106,7 @@ export function ParallaxStarsBackground({
             }}
           >
             <div
-              className="absolute top-[2000px] h-[3px] w-[3px] bg-transparent"
+              className="absolute top-[2000px] h-[6px] w-[6px] bg-transparent"
               style={{ boxShadow: shadows.big }}
             />
           </div>
@@ -110,7 +115,7 @@ export function ParallaxStarsBackground({
 
       {showTitle && (
         <div className="absolute left-0 right-0 top-1/2 z-20 -mt-[60px] px-4 text-center">
-          <h1 className="text-[30px] font-light leading-tight tracking-[10px] text-white md:text-[50px]">
+          <h1 className="text-[30px] font-light leading-tight tracking-[10px] text-surface-900 md:text-[50px]">
             {title.split("\n").map((line, i, arr) => (
               <Fragment key={`${i}-${line}`}>
                 <span className="text-gradient-clip">{line}</span>

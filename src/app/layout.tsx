@@ -20,7 +20,7 @@ export default function RootLayout({
           href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap"
         />
       </head>
-      <body className="font-body min-h-full overflow-x-hidden bg-surface-950 text-surface-100 antialiased">
+      <body className="font-body min-h-full overflow-x-hidden bg-surface-50 text-surface-900 antialiased">
         {children}
       </body>
     </html>

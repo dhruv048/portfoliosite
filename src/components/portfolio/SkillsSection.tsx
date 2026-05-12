@@ -27,48 +27,41 @@ type SkillIcon = ComponentType<SVGProps<SVGSVGElement>>;
 
 export function SkillsSection() {
   return (
-    <section id="skills" className="relative py-20 sm:py-32">
-      <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+    <section id="skills" className="relative bg-surface-950 py-20 sm:py-32">
+      <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-surface-700 to-transparent" />
+      
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-8">
         <div className="mb-16 text-center sm:mb-20">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2">
-            <Layers className="h-4 w-4 text-amber-400" aria-hidden />
-            <span className="text-sm font-medium text-surface-200/60">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-surface-800 bg-surface-900/50 px-4 py-2">
+            <Layers className="h-4 w-4 text-amber-500" aria-hidden />
+            <span className="text-sm font-medium text-white text-surface-400">
               Skills & Expertise
             </span>
           </div>
           <h2 className="font-display mb-4 text-4xl tracking-tight text-white sm:text-5xl xl:text-6xl">
-            A <span className="text-gradient-coral">multidisciplinary</span>{" "}
-            toolkit
+            A <span className="text-gradient-coral">multidisciplinary</span> toolkit
           </h2>
-          <p className="mx-auto max-w-2xl text-surface-200/50">
+          <p className="mx-auto max-w-2xl text-lg text-white text-surface-400">
             Four pillars of expertise that enable me to approach challenges from
-            every angle — technical, strategic, creative, and interpersonal.
+            every angle.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {/* AI & Data */}
-          <div className="skill-card group relative cursor-default overflow-hidden rounded-3xl border border-orchid-400/15 bg-surface-900 p-8 hover:border-orchid-400/40 hover:bg-surface-800">
-            <div className="absolute right-0 top-0 h-48 w-48 rounded-bl-full bg-gradient-to-bl from-orchid-400/5 to-transparent transition-all duration-500 group-hover:from-orchid-400/10" />
+          <div className="group relative cursor-default overflow-hidden rounded-3xl border border-surface-800 bg-surface-900/40 p-8 transition-all duration-300 hover:border-orchid-400/50 hover:bg-surface-900 focus-within:border-orchid-400/50">
+            <div className="absolute right-0 top-0 h-48 w-48 rounded-bl-full bg-orchid-400/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
             <div className="relative z-10">
-              <div className="mb-6 flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-orchid-400/20 bg-orchid-400/10">
-                  <BrainCircuit
-                    className="h-7 w-7 text-orchid-400"
-                    aria-hidden
-                  />
+              <div className="mb-8 flex items-center gap-5">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-surface-700 bg-surface-800 transition-colors group-hover:border-orchid-400/30 group-hover:bg-orchid-400/10">
+                  <BrainCircuit className="h-8 w-8 text-surface-400 transition-colors group-hover:text-orchid-400" />
                 </div>
                 <div>
-                  <h3 className="font-display text-xl tracking-tight text-white">
-                    AI & Data Skills
-                  </h3>
-                  <p className="text-sm text-orchid-400/60">
-                    Intelligence & Analytics
-                  </p>
+                  <h3 className="font-display text-2xl tracking-tight text-white">AI & Data Skills</h3>
+                  <p className="text-base text-surface-500 group-hover:text-orchid-400/70">Intelligence & Analytics</p>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-2 gap-4">
                 {(
                   [
                     [Cpu, "Machine Learning"],
@@ -77,12 +70,9 @@ export function SkillsSection() {
                     [BarChart3, "Data Analysis"],
                   ] as [SkillIcon, string][]
                 ).map(([Icon, label]) => (
-                  <div
-                    key={label}
-                    className="flex items-center gap-2.5 rounded-xl border border-white/10 bg-surface-950 px-4 py-3 transition-colors group-hover:border-orchid-400/25"
-                  >
-                    <Icon className="h-4 w-4 text-orchid-400" aria-hidden />
-                    <span className="text-sm text-surface-200/70">{label}</span>
+                  <div key={label} className="flex items-center gap-3 rounded-xl border border-surface-800 bg-surface-950/50 px-5 py-4 transition-all group-hover:border-orchid-400/20">
+                    <Icon className="h-5 w-5 text-surface-500 transition-colors group-hover:text-orchid-400" />
+                    <span className="text-base font-medium text-surface-300 group-hover:text-white">{label}</span>
                   </div>
                 ))}
               </div>
@@ -90,118 +80,98 @@ export function SkillsSection() {
           </div>
 
           {/* Business */}
-          <div className="skill-card group relative cursor-default overflow-hidden rounded-3xl border border-teal-400/15 bg-surface-900 p-8 hover:border-teal-400/40 hover:bg-surface-800">
-            <div className="absolute right-0 top-0 h-48 w-48 rounded-bl-full bg-gradient-to-bl from-teal-400/5 to-transparent transition-all duration-500 group-hover:from-teal-400/10" />
+          <div className="group relative cursor-default overflow-hidden rounded-3xl border border-surface-800 bg-surface-900/40 p-8 transition-all duration-300 hover:border-teal-400/50 hover:bg-surface-900 focus-within:border-teal-400/50">
+            <div className="absolute right-0 top-0 h-48 w-48 rounded-bl-full bg-teal-400/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
             <div className="relative z-10">
-              <div className="mb-6 flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-teal-400/20 bg-teal-400/10">
-                  <Briefcase className="h-7 w-7 text-teal-400" aria-hidden />
+              <div className="mb-8 flex items-center gap-5">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-surface-700 bg-surface-800 transition-colors group-hover:border-teal-400/30 group-hover:bg-teal-400/10">
+                  <Briefcase className="h-8 w-8 text-surface-400 transition-colors group-hover:text-teal-400" />
                 </div>
                 <div>
-                  <h3 className="font-display text-xl tracking-tight text-white">
-                    Business & Management
-                  </h3>
-                  <p className="text-sm text-teal-400/60">
-                    Leadership & Strategy
-                  </p>
+                  <h3 className="font-display text-2xl tracking-tight text-white">Business & Strategy</h3>
+                  <p className="text-base text-surface-500 group-hover:text-teal-400/70">Leadership & Strategy</p>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-2 gap-4">
                 {(
                   [
                     [Handshake, "Client Dealing"],
                     [Users, "Team Management"],
-                    [Wallet, "Financial Literacy"],
+                    [Wallet, "Finance"],
                     [Crown, "Leadership"],
                   ] as [SkillIcon, string][]
                 ).map(([Icon, label]) => (
-                  <div
-                    key={label}
-                    className="flex items-center gap-2.5 rounded-xl border border-white/10 bg-surface-950 px-4 py-3 transition-colors group-hover:border-teal-400/25"
-                  >
-                    <Icon className="h-4 w-4 text-teal-400" aria-hidden />
-                    <span className="text-sm text-surface-200/70">{label}</span>
+                  <div key={label} className="flex items-center gap-3 rounded-xl border border-surface-800 bg-surface-950/50 px-5 py-4 transition-all group-hover:border-teal-400/20">
+                    <Icon className="h-5 w-5 text-surface-500 transition-colors group-hover:text-teal-400" />
+                    <span className="text-base font-medium text-surface-300 group-hover:text-white">{label}</span>
                   </div>
                 ))}
               </div>
             </div>
           </div>
 
-          {/* Tools */}
-          <div className="skill-card group relative cursor-default overflow-hidden rounded-3xl border border-amber-400/15 bg-surface-900 p-8 hover:border-amber-400/40 hover:bg-surface-800">
-            <div className="absolute right-0 top-0 h-48 w-48 rounded-bl-full bg-gradient-to-bl from-amber-400/5 to-transparent transition-all duration-500 group-hover:from-amber-400/10" />
+          {/* Tools (Amber Accent) - Follows same pattern */}
+          <div className="group relative cursor-default overflow-hidden rounded-3xl border border-surface-800 bg-surface-900/40 p-8 transition-all duration-300 hover:border-amber-400/50 hover:bg-surface-900 focus-within:border-amber-400/50">
+            <div className="absolute right-0 top-0 h-48 w-48 rounded-bl-full bg-amber-400/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
             <div className="relative z-10">
-              <div className="mb-6 flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-amber-400/20 bg-amber-400/10">
-                  <Wrench className="h-7 w-7 text-amber-400" aria-hidden />
+              <div className="mb-8 flex items-center gap-5">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-surface-700 bg-surface-800 transition-colors group-hover:border-amber-400/30 group-hover:bg-amber-400/10">
+                  <Wrench className="h-8 w-8 text-surface-400 transition-colors group-hover:text-amber-400" />
                 </div>
                 <div>
-                  <h3 className="font-display text-xl tracking-tight text-white">
-                    Tools & Technologies
-                  </h3>
-                  <p className="text-sm text-amber-400/60">
-                    Platforms & Development
-                  </p>
+                  <h3 className="font-display text-2xl tracking-tight text-white">Tools & Tech</h3>
+                  <p className="text-base text-surface-500 group-hover:text-amber-400/70">Platforms & Development</p>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-2 gap-4">
                 {(
                   [
                     [PieChart, "Power BI"],
                     [Database, "SQL & Excel"],
-                    [Palette, "Figma & Canva"],
-                    [Globe, "App & Web Dev"],
+                    [Palette, "Figma"],
+                    [Globe, "Web Dev"],
                   ] as [SkillIcon, string][]
                 ).map(([Icon, label]) => (
-                  <div
-                    key={label}
-                    className="flex items-center gap-2.5 rounded-xl border border-white/10 bg-surface-950 px-4 py-3 transition-colors group-hover:border-amber-400/25"
-                  >
-                    <Icon className="h-4 w-4 text-amber-400" aria-hidden />
-                    <span className="text-sm text-surface-200/70">{label}</span>
+                  <div key={label} className="flex items-center gap-3 rounded-xl border border-surface-800 bg-surface-950/50 px-5 py-4 transition-all group-hover:border-amber-400/20">
+                    <Icon className="h-5 w-5 text-surface-500 transition-colors group-hover:text-amber-400" />
+                    <span className="text-base font-medium text-surface-300 group-hover:text-white">{label}</span>
                   </div>
                 ))}
               </div>
             </div>
           </div>
 
-          {/* Soft Skills */}
-          <div className="skill-card group relative cursor-default overflow-hidden rounded-3xl border border-coral-400/15 bg-surface-900 p-8 hover:border-coral-400/40 hover:bg-surface-800">
-            <div className="absolute right-0 top-0 h-48 w-48 rounded-bl-full bg-gradient-to-bl from-coral-400/5 to-transparent transition-all duration-500 group-hover:from-coral-400/10" />
+          {/* Soft Skills (Coral Accent) */}
+          <div className="group relative cursor-default overflow-hidden rounded-3xl border border-surface-800 bg-surface-900/40 p-8 transition-all duration-300 hover:border-coral-400/50 hover:bg-surface-900 focus-within:border-coral-400/50">
+            <div className="absolute right-0 top-0 h-48 w-48 rounded-bl-full bg-coral-400/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
             <div className="relative z-10">
-              <div className="mb-6 flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-coral-400/20 bg-coral-400/10">
-                  <Heart className="h-7 w-7 text-coral-400" aria-hidden />
+              <div className="mb-8 flex items-center gap-5">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-surface-700 bg-surface-800 transition-colors group-hover:border-coral-400/30 group-hover:bg-coral-400/10">
+                  <Heart className="h-8 w-8 text-surface-400 transition-colors group-hover:text-coral-400" />
                 </div>
                 <div>
-                  <h3 className="font-display text-xl tracking-tight text-white">
-                    Soft Skills
-                  </h3>
-                  <p className="text-sm text-coral-400/60">
-                    People & Communication
-                  </p>
+                  <h3 className="font-display text-2xl tracking-tight text-white">Soft Skills</h3>
+                  <p className="text-base text-surface-500 group-hover:text-coral-400/70">People & Communication</p>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-2 gap-4">
                 {(
                   [
                     [Mic, "Communication"],
                     [Puzzle, "Problem-Solving"],
-                    [PenTool, "Content Writing"],
+                    [PenTool, "Writing"],
                     [RefreshCw, "Adaptability"],
                   ] as [SkillIcon, string][]
                 ).map(([Icon, label]) => (
-                  <div
-                    key={label}
-                    className="flex items-center gap-2.5 rounded-xl border border-white/10 bg-surface-950 px-4 py-3 transition-colors group-hover:border-coral-400/25"
-                  >
-                    <Icon className="h-4 w-4 text-coral-400" aria-hidden />
-                    <span className="text-sm text-surface-200/70">{label}</span>
+                  <div key={label} className="flex items-center gap-3 rounded-xl border border-surface-800 bg-surface-950/50 px-5 py-4 transition-all group-hover:border-coral-400/20">
+                    <Icon className="h-5 w-5 text-surface-500 transition-colors group-hover:text-coral-400" />
+                    <span className="text-base font-medium text-surface-300 group-hover:text-white">{label}</span>
                   </div>
                 ))}
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

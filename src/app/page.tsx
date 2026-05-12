@@ -9,7 +9,7 @@ import { SkillsSection } from "@/components/portfolio/SkillsSection";
 
 export default function Home() {
   return (
-    <div className="font-body relative min-h-screen bg-surface-950 text-surface-100">
+    <div className="font-body relative min-h-screen bg-surface-50 text-surface-900">
       <div
         className="noise-overlay pointer-events-none fixed inset-0 z-50"
         aria-hidden
