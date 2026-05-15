@@ -7,7 +7,7 @@ export const site = {
     "https://dhruvgoyal.com.np",
   name: "Dhruv Goyal",
   /** Primary title — targets "Dhruv Goyal" and "Dhruv Goyal in AI" */
-  title: "Dhruv Goyal | Dhruv Goyal in AI — AI Strategist & Business Expert",
+  title: "Dhruv Goyal | AI, Tech & Business",
   tagline: "Dhruv Goyal in AI — Business Meets Technology",
   description:
     "Dhruv Goyal is an AI strategist, software developer, and business consultant. Explore Dhruv Goyal in AI: strategy, machine learning, agents, and real-world AI implementation for teams and founders.",
