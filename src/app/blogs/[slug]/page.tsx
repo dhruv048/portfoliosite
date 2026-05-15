@@ -60,7 +60,7 @@ export default async function BlogArticlePage({ params }: Props) {
 
       <SiteNav />
 
-      <main className="pt-28 pb-20 sm:pt-24 sm:pb-28">
+      <main className="pt-20 pb-16 sm:pt-24 sm:pb-28">
         <article
           className="mx-auto max-w-3xl px-4 sm:px-8"
           itemScope

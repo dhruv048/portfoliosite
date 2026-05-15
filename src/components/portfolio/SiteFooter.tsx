@@ -27,7 +27,7 @@ export function SiteFooter() {
                 alt="Dhruv Goyal logo"
                 width={LOGO_WIDTH}
                 height={LOGO_HEIGHT}
-                className="h-9 w-auto sm:h12"
+                className="h-9 w-auto sm:h-12"
               />
             </Link>
           </div>

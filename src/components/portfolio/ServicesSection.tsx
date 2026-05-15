@@ -8,7 +8,7 @@ import {
 
 export function ServicesSection() {
   return (
-    <section id="services" className="relative py-20 sm:py-32">
+    <section id="services" className="relative py-16 sm:py-32">
       <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-surface-300 to-transparent" />
       <div className="absolute inset-0">
         <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-coral-500/5 via-transparent to-teal-400/5 blur-3xl" />
@@ -21,7 +21,7 @@ export function ServicesSection() {
               What I Offer
             </span>
           </div>
-          <h2 className="font-display mb-4 text-4xl tracking-tight text-surface-900 sm:text-5xl xl:text-6xl">
+          <h2 className="font-display mb-4 text-3xl tracking-tight text-surface-900 sm:text-4xl md:text-5xl xl:text-6xl">
             Services & <span className="text-gradient-teal">Offerings</span>
           </h2>
           <p className="mx-auto max-w-2xl text-surface-700">
@@ -33,7 +33,7 @@ export function ServicesSection() {
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {/* AI Strategy */}
-          <div className="service-card group relative cursor-default overflow-hidden rounded-3xl border border-surface-200 bg-white p-8 text-center shadow-lg shadow-surface-950/5 hover:border-orchid-400/45 hover:bg-surface-50">
+          <div className="service-card group relative cursor-default overflow-hidden rounded-3xl border border-surface-200 bg-white p-6 text-center shadow-lg shadow-surface-950/5 hover:border-orchid-400/45 hover:bg-surface-50 sm:p-8">
             <div className="absolute inset-0 bg-gradient-to-b from-orchid-400/0 to-orchid-400/0 transition-all duration-500 group-hover:from-orchid-400/5 group-hover:to-transparent" />
             <div className="relative z-10">
               <div className="service-icon mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl border border-orchid-400/20 bg-orchid-400/10">
@@ -60,7 +60,7 @@ export function ServicesSection() {
           </div>
 
           {/* Business */}
-          <div className="service-card group relative cursor-default overflow-hidden rounded-3xl border border-surface-200 bg-white p-8 text-center shadow-lg shadow-surface-950/5 hover:border-teal-400/45 hover:bg-surface-50">
+          <div className="service-card group relative cursor-default overflow-hidden rounded-3xl border border-surface-200 bg-white p-6 text-center shadow-lg sm:p-8 shadow-surface-950/5 hover:border-teal-400/45 hover:bg-surface-50">
             <div className="absolute inset-0 bg-gradient-to-b from-teal-400/0 to-teal-400/0 transition-all duration-500 group-hover:from-teal-400/5 group-hover:to-transparent" />
             <div className="relative z-10">
               <div className="service-icon mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl border border-teal-400/20 bg-teal-400/10">
@@ -87,7 +87,7 @@ export function ServicesSection() {
           </div>
 
           {/* Data */}
-          <div className="service-card group relative cursor-default overflow-hidden rounded-3xl border border-surface-200 bg-white p-8 text-center shadow-lg shadow-surface-950/5 hover:border-amber-400/45 hover:bg-surface-50">
+          <div className="service-card group relative cursor-default overflow-hidden rounded-3xl border border-surface-200 bg-white p-6 text-center shadow-lg sm:p-8 shadow-surface-950/5 hover:border-amber-400/45 hover:bg-surface-50">
             <div className="absolute inset-0 bg-gradient-to-b from-amber-400/0 to-amber-400/0 transition-all duration-500 group-hover:from-amber-400/5 group-hover:to-transparent" />
             <div className="relative z-10">
               <div className="service-icon mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl border border-amber-400/20 bg-amber-400/10">
@@ -114,7 +114,7 @@ export function ServicesSection() {
           </div>
 
           {/* Web Dev */}
-          <div className="service-card group relative cursor-default overflow-hidden rounded-3xl border border-surface-200 bg-white p-8 text-center shadow-lg shadow-surface-950/5 hover:border-coral-400/45 hover:bg-surface-50">
+          <div className="service-card group relative cursor-default overflow-hidden rounded-3xl border border-surface-200 bg-white p-6 text-center shadow-lg sm:p-8 shadow-surface-950/5 hover:border-coral-400/45 hover:bg-surface-50">
             <div className="absolute inset-0 bg-gradient-to-b from-coral-400/0 to-coral-400/0 transition-all duration-500 group-hover:from-coral-400/5 group-hover:to-transparent" />
             <div className="relative z-10">
               <div className="service-icon mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl border border-coral-400/20 bg-coral-400/10">

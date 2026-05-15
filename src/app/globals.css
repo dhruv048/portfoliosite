@@ -214,6 +214,13 @@
 html {
   scroll-behavior: smooth;
   color-scheme: light;
+  scroll-padding-top: 5rem;
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: 5.5rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -273,14 +280,16 @@ html {
     );
 }
 
-.skill-card:hover {
-  transform: translateY(-8px) scale(1.02);
-}
+@media (hover: hover) and (pointer: fine) {
+  .skill-card:hover {
+    transform: translateY(-8px) scale(1.02);
+  }
 
-.service-card:hover {
-  transform: translateY(-12px);
-}
+  .service-card:hover {
+    transform: translateY(-12px);
+  }
 
-.service-card:hover .service-icon {
-  transform: scale(1.15) rotate(5deg);
+  .service-card:hover .service-icon {
+    transform: scale(1.15) rotate(5deg);
+  }
 }

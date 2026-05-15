@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function AboutSection() {
   return (
-    <section id="about" className="relative py-20 sm:py-32">
+    <section id="about" className="relative py-16 sm:py-32">
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.02]"
         style={{
@@ -15,18 +15,18 @@ export function AboutSection() {
       />
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-8">
         {/* Main Grid - Text Left, Card Right */}
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
+        <div className="grid grid-cols-1 items-center gap-10 sm:gap-12 lg:grid-cols-12 lg:gap-16">
           
           {/* Text Content - Left Side */}
           <div className="lg:col-span-6">
             {/* Top Badge */}
-            <div className="mb-8 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-orchid-500/20 to-coral-500/20 px-4 py-2 text-sm font-semibold text-orchid-600">
-              <Sparkles className="h-4 w-4" />
+            <div className="mb-6 inline-flex max-w-full flex-wrap items-center gap-2 rounded-full bg-gradient-to-r from-orchid-500/20 to-coral-500/20 px-3 py-1.5 text-xs font-semibold text-orchid-600 sm:mb-8 sm:px-4 sm:py-2 sm:text-sm">
+              <Sparkles className="h-3.5 w-3.5 shrink-0 sm:h-4 sm:w-4" />
               AI Enthusiast • Problem Solver • Builder
             </div>
 
             {/* Main Heading */}
-            <h2 className="font-display mb-6 text-4xl tracking-tight text-surface-900 sm:text-5xl">
+            <h2 className="font-display mb-6 text-3xl tracking-tight text-surface-900 sm:text-4xl md:text-5xl">
               Where <span className="text-gradient-coral">AI expertise</span>{" "}
               meets
               <br />
@@ -40,45 +40,45 @@ export function AboutSection() {
             </p>
 <div className="h-5"></div>
 
-                  <div className="grid overflow-hidden rounded-2xl  bg-surface-50 sm:grid-cols-3">
-                    <div className="flex flex-col items-start gap-3 px-4 py-4">
-                      <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-sm shadow-surface-950/5 ring-1 ring-surface-950/10">
-                        <Target className="h-4.5 w-4.5 text-coral-600" />
+                  <div className="grid grid-cols-3 overflow-hidden rounded-2xl bg-surface-50">
+                    <div className="flex flex-col items-start gap-1.5 px-2 py-3 sm:gap-2 sm:px-4 sm:py-4">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-sm shadow-surface-950/5 ring-1 ring-surface-950/10 sm:h-9 sm:w-9">
+                        <Target className="h-4 w-4 text-coral-600 sm:h-4.5 sm:w-4.5" />
                       </div>
                       <div className="leading-tight">
-                        <div className="text-sm font-semibold text-surface-900">
+                        <div className="text-xs font-semibold text-surface-900 sm:text-sm">
                           Strategize
                         </div>
-                         <div className="mt-2 text-xs text-surface-600">
-                  Building intelligent solutions with purpose.
-                </div>
+                        <div className="mt-1 text-[10px] leading-snug text-surface-600 sm:mt-2 sm:text-xs">
+                          Building intelligent solutions with purpose.
+                        </div>
                       </div>
                     </div>
 
-                    <div className="flex flex-col  items-start gap-3 border-t border-surface-200 px-4 py-4 sm:border-l sm:border-t-0">
-                      <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-sm shadow-surface-950/5 ring-1 ring-surface-950/10">
-                        <BarChart3 className="h-4.5 w-4.5 text-coral-600" />
+                    <div className="flex flex-col items-start gap-1.5 border-l border-surface-200 px-2 py-3 sm:gap-2 sm:px-4 sm:py-4">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-sm shadow-surface-950/5 ring-1 ring-surface-950/10 sm:h-9 sm:w-9">
+                        <BarChart3 className="h-4 w-4 text-coral-600 sm:h-4.5 sm:w-4.5" />
                       </div>
                       <div className="leading-tight">
-                        <div className="text-sm font-semibold text-surface-900">
+                        <div className="text-xs font-semibold text-surface-900 sm:text-sm">
                           Analyze
                         </div>
-                        <div className="mt-2 text-xs text-surface-600">
+                        <div className="mt-1 text-[10px] leading-snug text-surface-600 sm:mt-2 sm:text-xs">
                   Aligning AI capabilities with business goals.
                 </div>
                        
                       </div>
                     </div>
 
-                    <div className="flex flex-col items-start gap-3 border-t border-surface-200 px-4 py-4 sm:border-l sm:border-t-0">
-                      <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-sm shadow-surface-950/5 ring-1 ring-surface-950/10">
-                        <Lightbulb className="h-4.5 w-4.5 text-coral-600" />
+                    <div className="flex flex-col items-start gap-1.5 border-l border-surface-200 px-2 py-3 sm:gap-2 sm:px-4 sm:py-4">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-sm shadow-surface-950/5 ring-1 ring-surface-950/10 sm:h-9 sm:w-9">
+                        <Lightbulb className="h-4 w-4 text-coral-600 sm:h-4.5 sm:w-4.5" />
                       </div>
                       <div className="leading-tight">
-                        <div className="text-sm font-semibold text-surface-900">
+                        <div className="text-xs font-semibold text-surface-900 sm:text-sm">
                           Build
                         </div>
-                        <div className="mt-2 text-xs text-surface-600">
+                        <div className="mt-1 text-[10px] leading-snug text-surface-600 sm:mt-2 sm:text-xs">
                   From models to products — end to end.
                 </div>
                       </div>
@@ -91,7 +91,7 @@ export function AboutSection() {
           {/* Profile Card - Right Side */}
           <div className="relative animate-fade-in delay-500 lg:col-span-6">
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              <div className="relative overflow-hidden rounded-3xl border border-surface-200 bg-white p-8 shadow-xl shadow-surface-950/5">
+              <div className="relative overflow-hidden rounded-3xl border border-surface-200 bg-white p-5 shadow-xl shadow-surface-950/5 sm:p-8">
                 <div className="absolute right-0 top-0 h-40 w-40 rounded-bl-full bg-gradient-to-bl from-coral-500/10 to-transparent" />
                 <div className="absolute bottom-0 left-0 h-32 w-32 rounded-tr-full bg-gradient-to-tr from-teal-400/10 to-transparent" />
 
@@ -165,7 +165,7 @@ export function AboutSection() {
         </div>
 
         {/* Quote Section */}
-        <div className="mt-20 rounded-2xl border border-surface-200 bg-surface-50 p-8 sm:p-12">
+        <div className="mt-12 rounded-2xl border border-surface-200 bg-surface-50 p-6 sm:mt-20 sm:p-12">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8">
             <div className="shrink-0">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-surface-950/5">

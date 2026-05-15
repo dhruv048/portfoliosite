@@ -7,7 +7,7 @@ export function BlogsSection() {
   const featured = getFeaturedBlogPosts();
 
   return (
-    <section id="blogs" className="relative py-20 sm:py-32">
+    <section id="blogs" className="relative py-16 sm:py-32">
       <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-surface-300 to-transparent" />
       <div className="absolute inset-0">
         <div className="absolute right-0 top-1/4 h-[480px] w-[480px] -translate-y-1/2 rounded-full bg-gradient-to-bl from-coral-500/5 via-transparent to-orchid-400/5 blur-3xl" />
@@ -21,7 +21,7 @@ export function BlogsSection() {
                 Writing
               </span>
             </div>
-            <h2 className="font-display mb-4 text-4xl tracking-tight text-surface-900 sm:text-5xl xl:text-6xl">
+            <h2 className="font-display mb-4 text-3xl tracking-tight text-surface-900 sm:text-4xl md:text-5xl xl:text-6xl">
               I{" "}
               <span className="bg-gradient-to-r from-coral-500 to-orchid-500 bg-clip-text text-transparent">
                 Share,
@@ -60,7 +60,7 @@ export function BlogsSection() {
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                   />
                 </div>
-                <div className="flex flex-1 flex-col p-6">
+                <div className="flex flex-1 flex-col p-5 sm:p-6">
                 <time className="text-xs font-medium uppercase tracking-wider text-surface-500">
                   {post.publishedAt}
                 </time>
