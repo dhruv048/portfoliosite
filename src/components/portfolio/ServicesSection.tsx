@@ -25,8 +25,9 @@ export function ServicesSection() {
             Services & <span className="text-gradient-teal">Offerings</span>
           </h2>
           <p className="mx-auto max-w-2xl text-surface-700">
-            End-to-end support from strategy to execution — whether you need an
-            AI roadmap, data insights, or a full digital solution.
+            <strong>Dhruv Goyal</strong> offers end-to-end AI consulting — from
+            strategy to execution. Whether you need an AI roadmap, data insights,
+            or a full digital solution, <strong>Dhruv Goyal in AI</strong> delivers.
           </p>
         </div>
 

@@ -1,20 +1,40 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, BookOpen } from "lucide-react";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { SiteFooter } from "@/components/portfolio/SiteFooter";
 import { SiteNav } from "@/components/portfolio/SiteNav";
 import { BlogCoverImage } from "@/components/portfolio/BlogCoverImage";
-import { site } from "@/lib/site";
 import { blogPath, blogPosts } from "@/lib/blogs";
+import {
+  blogsIndexMetadata,
+  breadcrumbJsonLd,
+  webPageJsonLd,
+} from "@/lib/seo";
+import { site } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: `Blog — ${site.name}`,
-  description: "Articles on AI strategy, analytics, consulting, and delivery.",
-};
+export const metadata: Metadata = blogsIndexMetadata;
 
 export default function BlogsPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      webPageJsonLd({
+        path: "/blogs",
+        name: `Blog — ${site.name}`,
+        description:
+          "Articles by Dhruv Goyal on AI strategy, agents, and business — Dhruv Goyal in AI.",
+      }),
+      breadcrumbJsonLd([
+        { name: site.name, path: "/" },
+        { name: "Blog", path: "/blogs" },
+      ]),
+    ],
+  };
+
   return (
     <div className="font-body relative min-h-screen bg-surface-50 text-surface-900">
+      <JsonLd data={jsonLd} />
       <div
         className="noise-overlay pointer-events-none fixed inset-0 z-50"
         aria-hidden
@@ -36,14 +56,16 @@ export default function BlogsPage() {
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-surface-200 bg-white px-4 py-2 shadow-sm shadow-surface-950/5">
               <BookOpen className="h-4 w-4 text-coral-500" aria-hidden />
               <span className="text-sm font-medium text-surface-700">
-                All posts
+                All posts by Dhruv Goyal
               </span>
             </div>
             <h1 className="font-display text-4xl tracking-tight text-surface-900 sm:text-5xl">
-              Blog
+              Dhruv Goyal in AI — Blog
             </h1>
             <p className="mt-4 text-lg text-surface-700">
-              Full archive — each post lives on its own URL on this site.
+              Full archive of articles by <strong>Dhruv Goyal</strong> on AI
+              strategy, agents, prompting, and building AI businesses — each post
+              on its own URL for search and sharing.
             </p>
           </header>
 
@@ -63,7 +85,10 @@ export default function BlogsPage() {
                     />
                   </div>
                   <div className="flex min-w-0 flex-1 flex-col justify-center">
-                    <time className="text-xs font-medium uppercase tracking-wider text-surface-500">
+                    <time
+                      dateTime={post.isoDate}
+                      className="text-xs font-medium uppercase tracking-wider text-surface-500"
+                    >
                       {post.publishedAt}
                     </time>
                     <h2 className="font-display mt-1 text-xl tracking-tight text-surface-900 group-hover:text-coral-600 sm:text-2xl">

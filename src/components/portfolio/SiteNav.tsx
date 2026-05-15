@@ -1,4 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
+import { site } from "@/lib/site";
+
+const LOGO_WIDTH = 944;
+const LOGO_HEIGHT = 529;
 
 export function SiteNav() {
   return (
@@ -7,11 +12,19 @@ export function SiteNav() {
         <Link
           id="nav-logo-link"
           href="/#hero"
-          className="font-display flex items-center gap-2 text-2xl tracking-tight text-surface-900"
+          className="flex shrink-0 items-center"
+          aria-label={`${site.name} — home`}
         >
-            <span className="inline-flex font-display tracking-tight h-8 w-18 items-center justify-center rounded-lg bg-gradient-to-br from-coral-500 to-amber-400 text-lg font-bold text-white">
-              Dhruv
-            </span>
+          <span className="inline-flex rounded-lg  p-1.5">
+            <Image
+              src="/brand-logo.png"
+              alt="Dhruv Goyal logo"
+              width={LOGO_WIDTH}
+              height={LOGO_HEIGHT}
+              className="h-9 w-auto sm:h-12"
+              priority
+            />
+          </span>
         </Link>
         <div className="flex flex-wrap items-center gap-x-6 gap-y-2 sm:gap-8">
           <Link

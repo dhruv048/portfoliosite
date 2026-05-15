@@ -13,6 +13,8 @@ export type BlogPost = {
   title: string;
   excerpt: string;
   publishedAt: string;
+  /** ISO 8601 date for sitemap and structured data */
+  isoDate: string;
   /** Shown in the home preview (keep to about 3–4). */
   featuredOnHome: boolean;
   coverImage: BlogCover;
@@ -26,6 +28,7 @@ export const blogPosts: BlogPost[] = [
     title: "AI Agents vs ChatGPT: Why Dhruv in AI Framework Matters",
     excerpt: "Dhruv Goyal breaks down the critical difference between ChatGPT chatbots and AI agents. Learn why AI agents are replacing traditional chatbots for business automation.",
     publishedAt: "May 2026",
+    isoDate: "2026-05-14T00:00:00.000Z",
     featuredOnHome: true,
     coverImage: {
       src: "/blog/ai-agents-vs-chatgpt.png",
@@ -57,6 +60,7 @@ export const blogPosts: BlogPost[] = [
     title: "The ACDWQ Framework: How Dhruv Goyal Gets AI to Sound Like You",
     excerpt: "Learn Dhruv Goyal's ACDWQ framework - the 5-step prompting method that stops AI from sounding like a bot. Get high-level outputs by treating AI like you would a consultant.",
     publishedAt: "May 2026",
+    isoDate: "2026-05-12T00:00:00.000Z",
     featuredOnHome: true,
     coverImage: {
       src: "/blog/acdwq-framework.png",
@@ -92,6 +96,7 @@ export const blogPosts: BlogPost[] = [
     title: "6 AI Businesses Making Millions: Dhruv Goyal's Market Analysis",
     excerpt: "Dhruv Goyal breaks down 6 AI businesses generating $150k-$330M ARR. Learn the playbook these founders used to turn simple AI applications into million-dollar companies.",
     publishedAt: "May 2026",
+    isoDate: "2026-05-10T00:00:00.000Z",
     featuredOnHome: false,
     coverImage: {
       src: "/blog/6-ai-businesses.png",
@@ -123,6 +128,7 @@ export const blogPosts: BlogPost[] = [
     title: "Personal Branding for AI Professionals: Dhruv Goyal's Marketing Module Insights",
     excerpt: "Dhruv Goyal shares his top 5 personal branding lessons from his University of Wolverhampton marketing module. Learn how to position yourself as an AI authority.",
     publishedAt: "May 2026",
+    isoDate: "2026-05-08T00:00:00.000Z",
     featuredOnHome: false,
     coverImage: {
       src: "/blog/personal-branding-marketing.png",
@@ -154,6 +160,7 @@ export const blogPosts: BlogPost[] = [
     title: "Why AI Chatbots Give Confident Wrong Answers: Dhruv Goyal's Fix That Works",
     excerpt: "Dhruv Goyal reveals why free AI chatbots hallucinate and give confidently wrong answers. Discover the one-line prompt that forces AI to ask clarifying questions instead.",
     publishedAt: "May 2026",
+    isoDate: "2026-05-06T00:00:00.000Z",
     featuredOnHome: true,
     coverImage: {
       src: "/blog/ai-hallucinations-fix.png",
@@ -187,6 +194,7 @@ export const blogPosts: BlogPost[] = [
     title: "Stop Using One AI for Everything: Dhruv Goyal's AI Tool Selection Framework",
     excerpt: "Dhruv Goyal explains why using one AI tool for everything limits your productivity. Learn which AI tool is best for each task (ChatGPT vs Claude vs Gemini vs Perplexity).",
     publishedAt: "May 2026",
+    isoDate: "2026-05-04T00:00:00.000Z",
     featuredOnHome: true,
     coverImage: {
       src: "/blog/ai-tool-selection-framework.png",

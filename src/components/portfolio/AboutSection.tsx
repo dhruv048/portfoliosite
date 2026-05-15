@@ -32,6 +32,12 @@ export function AboutSection() {
               <br />
               business <span className="text-gradient-teal">intelligence</span>
             </h2>
+            <p className="mb-6 max-w-xl text-base leading-relaxed text-surface-700 sm:text-lg">
+              <strong>Dhruv Goyal</strong> helps founders and teams apply AI with
+              clarity — not hype. As <strong>Dhruv Goyal in AI</strong>, I combine
+              engineering, data, and business strategy so your AI roadmap ships and
+              delivers measurable results.
+            </p>
 <div className="h-5"></div>
 
                   <div className="grid overflow-hidden rounded-2xl  bg-surface-50 sm:grid-cols-3">
@@ -99,7 +105,7 @@ export function AboutSection() {
                       <div className="relative h-20 w-20 overflow-hidden rounded-full border-[3px] border-white bg-surface-100 shadow-[0_6px_0_0_#d6d3d1,0_16px_36px_-14px_rgba(244,63,94,0.45),0_6px_14px_-4px_rgba(28,25,23,0.2)]">
                         <Image
                           src="/hero-avatar-3d.png"
-                          alt="Dhruv — illustrated 3D emoji-style character (not a photograph)"
+                          alt="Dhruv Goyal — illustrated 3D avatar"
                           width={136}
                           height={136}
                           priority
@@ -118,7 +124,7 @@ export function AboutSection() {
                     </div>
                     <div>
                       <div className="text-lg font-bold text-surface-900">
-                        Dhruv
+                        Dhruv Goyal
                       </div>
                       <div className="text-sm text-surface-600">
                         Software Developer turned Business Officer

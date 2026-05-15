@@ -32,7 +32,9 @@ export function BlogsSection() {
               </span>
             </h2>
             <p className="text-surface-700">
-              Selected notes from my learnings.
+              Articles by <strong>Dhruv Goyal</strong> on AI strategy, agents, and
+              building in public — explore <strong>Dhruv Goyal in AI</strong> through
+              practical guides.
             </p>
           </div>
           <Link

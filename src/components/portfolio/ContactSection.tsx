@@ -26,9 +26,9 @@ export function ContactSection() {
               <span className="text-gradient-coral">extraordinary</span> together
             </h2>
             <p className="mx-auto mb-10 max-w-xl text-lg text-surface-700">
-              Whether you&apos;re looking for AI strategy consulting, data
-              analysis, or want to discuss how AI can transform your business —
-              I&apos;d love to hear from you.
+              Work with <strong>Dhruv Goyal</strong> on AI strategy, data analysis,
+              or implementation. Reach out to discuss how{" "}
+              <strong>Dhruv Goyal in AI</strong> can help your team ship smarter.
             </p>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link

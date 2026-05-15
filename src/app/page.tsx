@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { AboutSection } from "@/components/portfolio/AboutSection";
 import { BlogsSection } from "@/components/portfolio/BlogsSection";
 import { ContactSection } from "@/components/portfolio/ContactSection";
@@ -7,6 +8,9 @@ import { ServicesSection } from "@/components/portfolio/ServicesSection";
 import { SiteFooter } from "@/components/portfolio/SiteFooter";
 import { SiteNav } from "@/components/portfolio/SiteNav";
 import { SkillsSection } from "@/components/portfolio/SkillsSection";
+import { homeMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = homeMetadata;
 
 export default function Home() {
   return (
@@ -18,7 +22,7 @@ export default function Home() {
 
       <SiteNav />
 
-      <main>
+      <main id="main-content">
         <Hero />
         <MarqueeStrip />
         <AboutSection />

@@ -49,20 +49,22 @@ export function Hero() {
               </div>
             </div>
 
-            <h1 className="animate-slide-up delay-100 font-display text-5xl leading-[0.9] tracking-tight text-surface-900 sm:text-6xl xl:text-7xl">
-              Business
+            <h1 className="animate-slide-up delay-100 font-display text-5xl leading-[0.95] tracking-tight text-surface-900 sm:text-6xl xl:text-7xl">
+              Dhruv Goyal
               <br />
-              <span className="text-gradient-coral">Meets</span> Tech & AI<span className="text-coral-500"></span>
-              <br />
+              <span className="text-gradient-coral">Dhruv Goyal in AI</span>
             </h1>
 
-            <p className="animate-slide-up delay-200 mb-10 mt-6 max-w-lg text-base leading-relaxed text-surface-700 sm:text-lg">
-              I&apos;m <span className="font-bold text-surface-900">Dhruv</span>,{" "}
-              an
-              AI strategist and business consultant who transforms complex
-              technology into real-world results. From machine learning to
-              stakeholder management, I bridge the gap between innovation and
-              execution.
+            <p className="animate-slide-up delay-200 mt-4 max-w-lg text-lg font-medium text-surface-800 sm:text-xl">
+              Business <span className="text-gradient-coral">Meets</span> Tech &amp; AI
+            </p>
+
+            <p className="animate-slide-up delay-200 mb-10 mt-4 max-w-lg text-base leading-relaxed text-surface-700 sm:text-lg">
+              I&apos;m <strong>Dhruv Goyal</strong>, an AI strategist and software
+              developer turned business consultant. If you&apos;re searching for{" "}
+              <strong>Dhruv Goyal in AI</strong>, you&apos;ll find strategy, machine
+              learning, agents, and execution — from models to marketing and
+              real-world business outcomes.
             </p>
 
             <div className="animate-slide-up delay-300 flex flex-col items-stretch gap-4 sm:flex-row sm:items-center">
@@ -99,7 +101,7 @@ export function Hero() {
                 <div className="relative h-[600px] w-full sm:h-[700px] lg:h-[900px] group">
                   <Image
                     src="/images/IMG_0676.png"
-                    alt="Dhruv - AI Strategist"
+                    alt="Dhruv Goyal in AI"
                     fill
                     priority
                     className="object-cover object-center group-hover:scale-105 transition-transform duration-500 drop-shadow-2xl"

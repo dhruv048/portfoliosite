@@ -1,5 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
-import { Heart, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import {
   IconGitHub,
   IconLinkedIn,
@@ -7,16 +8,28 @@ import {
 } from "@/components/icons/BrandIcons";
 import { site } from "@/lib/site";
 
+const LOGO_WIDTH = 944;
+const LOGO_HEIGHT = 529;
+
 export function SiteFooter() {
   return (
     <footer className="border-t border-surface-200 py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
         <div className="flex flex-col items-center justify-between gap-8 text-center md:flex-row md:text-left">
           <div className="flex items-center justify-center gap-3 md:justify-start">
-            <span className="inline-flex font-display tracking-tight h-8 w-15 items-center justify-center rounded-lg bg-gradient-to-br from-coral-500 to-amber-400 text-lg font-bold text-white">
-              Dhruv
-            </span>
-          
+            <Link
+              href="/#hero"
+              className="inline-flex rounded-lg p-1.5 "
+              aria-label={`${site.name} — home`}
+            >
+              <Image
+                src="/brand-logo.png"
+                alt="Dhruv Goyal logo"
+                width={LOGO_WIDTH}
+                height={LOGO_HEIGHT}
+                className="h-9 w-auto sm:h12"
+              />
+            </Link>
           </div>
           <div className="flex items-center justify-center gap-6">
             <Link
