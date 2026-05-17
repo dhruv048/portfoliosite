@@ -13,26 +13,26 @@ import { homeMetadata } from "@/lib/seo";
 export const metadata: Metadata = homeMetadata;
 
 export default function Home() {
-  return (
-    <div className="font-body relative min-h-screen bg-surface-50 text-surface-900">
-      <div
-        className="noise-overlay pointer-events-none fixed inset-0 z-50"
-        aria-hidden
-      />
+	return (
+		<div className="font-body relative min-h-screen bg-surface-50 text-surface-900">
+			<div
+				className="noise-overlay pointer-events-none fixed inset-0 z-50"
+				aria-hidden
+			/>
 
-      <SiteNav />
+			<SiteNav />
 
-      <main id="main-content">
-        <Hero />
-        <MarqueeStrip />
-        <AboutSection />
-        <SkillsSection />
-        <ServicesSection />
-        <BlogsSection />
-        <ContactSection />
-      </main>
+			<main id="main-content">
+				<Hero />
+				<MarqueeStrip />
+				<AboutSection />
+				<SkillsSection />
+				<ServicesSection />
+				<BlogsSection />
+				<ContactSection />
+			</main>
 
-      <SiteFooter />
-    </div>
-  );
+			<SiteFooter />
+		</div>
+	);
 }
