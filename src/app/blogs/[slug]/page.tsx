@@ -111,9 +111,33 @@ export default async function BlogArticlePage({ params }: Props) {
             className="space-y-6 text-base leading-relaxed text-surface-800"
             itemProp="articleBody"
           >
-            {post.content.map((paragraph, i) => (
-              <p key={i}>{paragraph}</p>
-            ))}
+            {post.content.map((item, i) => {
+              // Handle image objects
+              if (typeof item === "object" && "type" in item && item.type === "image") {
+                return (
+                  <figure key={i} className="my-8 overflow-hidden rounded-xl border border-surface-200 bg-surface-100 shadow-sm shadow-surface-950/5">
+                    <img
+                      src={item.src}
+                      alt={item.alt}
+                      className="w-full object-cover"
+                      sizes="(max-width: 768px) 100vw, 768px"
+                      loading="lazy"
+                    />
+                    {item.caption && (
+                      <figcaption className="p-4 text-sm text-surface-600 italic">
+                        {item.caption}
+                      </figcaption>
+                    )}
+                  </figure>
+                );
+              }
+              // Handle regular text paragraphs
+              return (
+                <p key={i}>
+                  {typeof item === "string" ? item : item.text}
+                </p>
+              );
+            })}
           </div>
         </article>
       </main>
