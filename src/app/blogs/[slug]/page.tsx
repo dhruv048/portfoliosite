@@ -140,7 +140,7 @@ export default async function BlogArticlePage({ params }: Props) {
 							}
 							// Handle regular text paragraphs
 							return (
-								<p key={i}>{typeof item === "string" ? item : item.text}</p>
+								<p key={i}>{typeof item === "string" ? item : "item.text"}</p>
 							);
 						})}
 					</div>
