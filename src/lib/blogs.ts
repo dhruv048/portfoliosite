@@ -117,7 +117,9 @@ export const blogPosts: BlogPost[] = [
     "If I had to distill the entire module into one principle, it's this: Marketing today isn't about selling products. It's about understanding people, building trust, and positioning yourself (or your product) in a way that resonates with where they are.",
     "If you're considering a marketing education, look for programs that don't just teach concepts. Find ones that make you apply those concepts to real challenges. Because that's when learning becomes transformation.",
     
-    "Dhruv Goyal is a marketing consultant and digital strategist currently exploring the intersection of AI, personal branding, and professional development. He graduated from the University of Wolverhampton's Marketing Consultant Module and is passionate about helping others build strategic, authentic professional brands. Connect with Dhruv Goyal on LinkedIn at linkedin.com/in/dhruvvv-goyal"
+    "Dhruv Goyal is a marketing consultant and digital strategist currently exploring the intersection of AI, personal branding, and professional development. He graduated from the University of Wolverhampton's Marketing Consultant Module and is passionate about helping others build strategic, authentic professional brands. Connect with Dhruv Goyal on LinkedIn at linkedin.com/in/dhruvvv-goyal",
+    
+    "#TheMarketingConsultant #Marketing #SEO #PersonalBranding #DigitalMarketing #StudentJourney #DhruvGoyal #DhruvInAI"
   ]
 },
 
@@ -155,6 +157,7 @@ export const blogPosts: BlogPost[] = [
       "Real-World Example From Dhruv Goyal - My situation: I needed a content strategy for my AI consulting brand. Without the fix: 'Create content about AI trends, business use cases, and future predictions.' With the fix: AI asked me my target audience, what I'm already known for, how much time I have, what my monetization goals are, what competitors are doing. Then it gave me a completely different strategy tailored to my actual situation.",
       
       "This isn't just about better prompts. It's about understanding that AI will give you what you ask for. If you ask vague questions, you get vague answers. If you ask specific questions with explicit constraints, you get better answers. This is what Dhruv Goyal calls 'prompt literacy' - the new professional skill."
+    ,"#AIStrategy hashtag#AIPrompts hashtag#Automation hashtag#AgenticAI hashtag#AIConsulting hashtag#DhruvInAI"
     ]
   },
 
@@ -195,6 +198,7 @@ export const blogPosts: BlogPost[] = [
       "The Economics: Why This Matters - Using one tool for everything: Slower outputs (wrong tool for the job), Lower quality (not optimized for task), More revisions needed (fixing wrong approach), Time wasted (fighting the tool). Using the right tool for each task: Faster outputs (optimized for the job), Higher quality first time, Fewer revisions needed, Time saved overall.",
       
       "Stop asking 'Which AI is the best?' Start asking 'Which AI is best for THIS task?' This one mindset shift will multiply your AI productivity."
+  ,"hashtag#AIStrategy hashtag#Automation hashtag#AgenticAI hashtag#AIConsulting hashtag#DhruvInAI"
     ]
   }
   // {
