@@ -81,7 +81,7 @@ export default function BlogsPage() {
                       src={post.coverImage.src}
                       alt={post.coverImage.alt}
                       sizes="(max-width: 640px) 100vw, 208px"
-                      className="h-full w-full object-cover sm:min-h-[140px]"
+                      className="h-full w-full object-contain sm:min-h-[140px]"
                     />
                   </div>
                   <div className="flex min-w-0 flex-1 flex-col justify-center">

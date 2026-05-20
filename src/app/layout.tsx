@@ -13,6 +13,10 @@ export const metadata: Metadata = {
 	description: site.description,
 	applicationName: site.name,
 	category: "technology",
+	icons: {
+		icon: [{ url: "/brand-logo.png", type: "image/png" }],
+		apple: [{ url: "/brand-logo.png", type: "image/png" }],
+	},
 	formatDetection: {
 		email: false,
 		address: false,

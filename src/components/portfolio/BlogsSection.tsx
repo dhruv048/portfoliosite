@@ -23,11 +23,11 @@ export function BlogsSection() {
             </div>
             <h2 className="font-display mb-4 text-3xl tracking-tight text-surface-900 sm:text-4xl md:text-5xl xl:text-6xl">
               I{" "}
-              <span className="bg-gradient-to-r from-coral-500 to-orchid-500 bg-clip-text text-transparent">
+              <span className="text-gradient-coral">
                 Share,
               </span>
               {" "} We{" "}
-              <span className="bg-gradient-to-r from-coral-500 to-orchid-500 bg-clip-text text-transparent">
+              <span className="text-gradient-coral bg-clip-text text-transparent">
                 Grow
               </span>
             </h2>
@@ -57,7 +57,7 @@ export function BlogsSection() {
                     src={post.coverImage.src}
                     alt={post.coverImage.alt}
                     sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                    className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-[1.03]"
                   />
                 </div>
                 <div className="flex flex-1 flex-col p-5 sm:p-6">

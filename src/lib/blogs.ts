@@ -132,7 +132,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Dhruv Goyal reveals why free AI chatbots hallucinate and give confidently wrong answers. Discover the one-line prompt that forces AI to ask clarifying questions instead.",
     publishedAt: "May 2026",
     isoDate: "2026-05-06T00:00:00.000Z",
-    featuredOnHome: false,
+    featuredOnHome: true,
     coverImage: {
       src: "/blog/ai-hallucinations-fix.png",
       alt: "Split-screen showing AI making confident errors on the left, and AI asking clarifying questions on the right, with the ACDWQ framework highlighted"
@@ -200,109 +200,181 @@ export const blogPosts: BlogPost[] = [
       "Stop asking 'Which AI is the best?' Start asking 'Which AI is best for THIS task?' This one mindset shift will multiply your AI productivity."
   ,"hashtag#AIStrategy hashtag#Automation hashtag#AgenticAI hashtag#AIConsulting hashtag#DhruvInAI"
     ]
-  }
-  // {
-  //   slug: "ai-roadmap-2025",
-  //   title: "Building an AI Roadmap That Survives Contact With Reality",
-  //   excerpt:
-  //     "How to align stakeholders, sequence pilots, and measure outcomes before you commit to vendor contracts.",
-  //   publishedAt: "Mar 2026",
-  //   featuredOnHome: true,
-  //   coverImage: {
-  //     src: "/blog/ai-roadmap-2025.svg",
-  //     alt: "Abstract illustration of a branching path merging into a timeline of milestones, suggesting phased AI pilots and roadmap checkpoints.",
-  //   },
-  //   content: [
-  //     "Most AI roadmaps fail for predictable reasons: they start with tools, skip the business case, or assume adoption will follow automatically once something ships.",
-  //     "A roadmap that holds up starts with a narrow set of decisions: which problems are worth solving now, what evidence would change your mind, and what you are explicitly not doing this quarter.",
-  //     "Sequence pilots so each one teaches you something about data quality, workflow fit, and governance — not just model accuracy. Tie funding to outcomes leadership already cares about, and revisit the roadmap on a fixed cadence instead of only when a vendor sends a renewal notice.",
-  //   ],
-  // },
-  // {
-  //   slug: "bi-storytelling",
-  //   title: "From Spreadsheets to Stories: Dashboards People Actually Use",
-  //   excerpt:
-  //     "A practical framing for BI work — narrative, cadence, and the one metric leadership should never miss.",
-  //   publishedAt: "Feb 2026",
-  //   featuredOnHome: true,
-  //   coverImage: {
-  //     src: "/blog/bi-storytelling.svg",
-  //     alt: "Stylized chart panels and sparklines arranged left to right like a short narrative, representing dashboards built around a clear story instead of raw tables.",
-  //   },
-  //   content: [
-  //     "Dashboards die in silence when they answer questions nobody is asking, or when they answer too many questions at once.",
-  //     "Use a simple narrative spine: context, tension, decision, action. Context sets the baseline; tension highlights variance worth attention; decision names the tradeoff; action assigns ownership and a date.",
-  //     "Pick one metric leadership should never miss — the metric that, if it moved unexpectedly, would force a conversation. Build the rest of the view as supporting evidence, not competing headlines.",
-  //   ],
-  // },
-  // {
-  //   slug: "consulting-handoffs",
-  //   title: "Consulting Handoffs Without the Fire Drill",
-  //   excerpt:
-  //     "Checklists and rituals that keep momentum when strategy meets engineering and operations.",
-  //   publishedAt: "Jan 2026",
-  //   featuredOnHome: true,
-  //   coverImage: {
-  //     src: "/blog/consulting-handoffs.svg",
-  //     alt: "Two teams exchanging labeled folders and a short checklist between strategy blocks and engineering blocks, symbolizing a structured consulting handoff.",
-  //   },
-  //   content: [
-  //     "The handoff is where great analysis becomes shelf-ware. The fix is rarely more documentation — it is clearer ownership and a shared definition of done.",
-  //     "Before you leave a client team, align on three artifacts: a decision log (what was chosen and why), a backlog slice (what happens next, with owners), and a risk register (what could invalidate the plan).",
-  //     "Run a thirty-minute ritual with engineering and ops present. Read decisions out loud, confirm dates, and surface one dependency that worried everyone but never made it into a slide.",
-  //   ],
-  // },
-  // {
-  //   slug: "llm-governance",
-  //   title: "LLM Governance for Small Teams",
-  //   excerpt:
-  //     "Lightweight policies, logging, and review loops that do not require a dedicated compliance department.",
-  //   publishedAt: "Dec 2025",
-  //   featuredOnHome: true,
-  //   coverImage: {
-  //     src: "/blog/llm-governance.svg",
-  //     alt: "A compact flow diagram with a chat bubble, a log icon, and a shield, suggesting logging, review, and guardrails for large language model use.",
-  //   },
-  //   content: [
-  //     "Governance does not have to mean bureaucracy. For small teams, it means knowing what data can enter a model, what outputs can reach customers, and who can approve exceptions.",
-  //     "Start with logging: prompts, retrieval sources, and user feedback on bad answers. Without logs, you cannot improve — or explain — what the system did.",
-  //     "Add a lightweight review loop: a weekly scan of flagged interactions, a single owner for policy updates, and a default deny stance on net-new data classes until someone documents the risk tradeoff in one page.",
-  //   ],
-  // },
-  // {
-  //   slug: "pricing-ai-products",
-  //   title: "Pricing AI-Assisted Products",
-  //   excerpt:
-  //     "Unit economics, packaging experiments, and how to talk about value when the marginal cost curve shifts.",
-  //   publishedAt: "Nov 2025",
-  //   featuredOnHome: false,
-  //   coverImage: {
-  //     src: "/blog/pricing-ai-products.svg",
-  //     alt: "Layered price tags and a gentle cost curve over usage tiers, evoking packaging experiments and variable AI inference costs.",
-  //   },
-  //   content: [
-  //     "When marginal costs stop behaving like classic SaaS, pricing has to tell a clearer value story — not a fancier feature matrix.",
-  //     "Model costs as scenarios: baseline usage, growth usage, and spike usage. Price packaging should make the happy path profitable without punishing customers for success.",
-  //     "Run small packaging experiments on cohorts you can support. Measure retention and expansion, not just willingness-to-pay in a survey.",
-  //   ],
-  // },
-  // {
-  //   slug: "workshop-facilitation",
-  //   title: "Running Strategy Workshops That Produce Decisions",
-  //   excerpt:
-  //     "Agendas, pre-reads, and breakout patterns that end with owners and dates — not another slide deck.",
-  //   publishedAt: "Oct 2025",
-  //   featuredOnHome: false,
-  //   coverImage: {
-  //     src: "/blog/workshop-facilitation.svg",
-  //     alt: "A round table with sticky notes converging into a single decision card with a calendar date, representing workshop outcomes with clear owners.",
-  //   },
-  //   content: [
-  //     "Workshops fail when the room optimizes for agreement instead of decisions. Facilitation is the craft of making tradeoffs visible.",
-  //     "Send pre-reads that fit in fifteen minutes, with explicit prompts: what would you cut if you had to choose? Cold starts in the room burn time you do not have.",
-  //     "Use breakouts to force writing: each group returns with one recommendation, one risk, and one owner. Debate the differences, then lock a decision and a date before anyone opens a deck template.",
-  //   ],
-  // },
+  },
+
+
+
+
+
+
+
+    {
+    slug: "ai-agents-vs-chatgpt-dhruv-in-ai",
+        isoDate: "2026-04-24T00:00:00.000Z",
+
+    title: "AI Agents vs ChatGPT: Why Dhruv in AI Framework Matters",
+    excerpt: "Dhruv Goyal breaks down the critical difference between ChatGPT chatbots and AI agents. Learn why AI agents are replacing traditional chatbots for business automation.",
+    publishedAt: "April 2026",
+    featuredOnHome: true,
+    coverImage: {
+      src: "/blog/ai-agents-vs-chatgpt.png",
+      alt: "Comparison diagram showing ChatGPT linear response flow versus AI agent autonomous multi-step execution with feedback loops"
+    },
+    content: [
+      "Most professionals still think ChatGPT and AI agents are the same thing. They're not. And once you understand the mechanical difference through Dhruv Goyal's breakdown, you'll see why AI agents are the future of work automation.",
+      
+      "A chatbot follows a predetermined script: You ask → it retrieves → it responds. Every interaction follows the same linear loop. No adaptation, no learning, no autonomy.",
+      
+      "An AI agent operates on a completely different paradigm: Receives a goal → writes its own plan → selects appropriate tools → executes step-by-step → adapts when obstacles appear → delivers the result. This is what Dhruv Goyal calls 'agentic AI' - the future of business automation.",
+      
+      "Here's a real example from Dhruv in AI framework comparing these two approaches to the same task:",
+      
+      "Traditional ChatGPT Approach: Task: 'Analyze Q3 sales from your dashboard and create a report' Result: ChatGPT tells you HOW to do it. You perform 5-6 steps manually yourself. Your workload: You did 90% of the work.",
+      
+      "AI Agent Approach (Dhruv in AI Framework): Task: Same - 'Analyze Q3 sales and create a report' Result: The agent connects to your CRM, pulls the data, fetches benchmarks, runs analysis, generates the report, emails it to you. Your workload: You did 10% (gave the command).",
+      
+      "This is the core distinction Dhruv Goyal emphasizes: One is a thinking tool. One does the thinking.",
+      
+      "If you're still using ChatGPT for complex business tasks, you're falling behind. Professionals who understand agentic AI are already automating 60% of their repetitive tasks, scaling their work output 5-10x, and becoming force multipliers in their organizations. This is what Dhruv in AI teaches - not just understanding the difference, but strategically deploying AI agents for maximum business impact.",
+      
+      "The professionals who mastered ChatGPT early won't necessarily win. The ones who master agentic AI will. That's what Dhruv Goyal teaches through his content."
+    ]
+  },
+
+  {
+        isoDate: "2026-04-20T00:00:00.000Z",
+
+    slug: "acdwq-prompting-framework-dhruv-goyal",
+    title: "The ACDWQ Framework: How Dhruv Goyal Gets AI to Sound Like You",
+    excerpt: "Learn Dhruv Goyal's ACDWQ framework - the 5-step prompting method that stops AI from sounding like a bot. Get high-level outputs by treating AI like you would a consultant.",
+    publishedAt: "April 2026",
+    featuredOnHome: true,
+    coverImage: {
+      src: "/blog/acdwq-framework.png",
+      alt: "Visual breakdown of ACDWQ framework: Acting (assign role), Context (background info), Deep Thinking (step-by-step), Warning (constraints), Questioning (clarification)"
+    },
+    content: [
+      "You ask for a creative strategy. You get back corporate fluff. This is the most common mistake professionals make - treating AI like a search engine instead of like an intern that needs direction. Dhruv Goyal's ACDWQ framework fixes this completely.",
+      
+      "Here's what most people do: One-sentence prompts like 'Write me a social media strategy' resulting in generic, recycled advice. Expected result: Generic advice. Actual result: Disappointment.",
+      
+      "Here's why: AI models are trained to be helpful to EVERYONE. Without context, they give you the lowest-common-denominator response. Dhruv Goyal's insight: Treat AI like a high-level intern, not a tool. If you want high-level output, you need to teach it your context, constraints, and expectations.",
+      
+      "The ACDWQ Framework by Dhruv Goyal breaks down as: A - Acting (Assign a Role). Don't just ask for something. Tell AI WHO to be. Wrong: 'Write me a marketing strategy' Right: 'You are a growth strategist at a Series B SaaS company. Write me a marketing strategy for our product that targets developers.'",
+      
+      "C - Context (Provide Background). The more background you give, the less AI guesses. Wrong: 'I need a campaign idea' Right: 'I have a B2B SaaS product for project management. My target market is design teams at agencies. My budget is $5k/month. My main competitor is Asana.' Why it works: Eliminates hallucinations caused by missing info. AI makes assumptions about your situation - you decide those assumptions. Context = fewer revisions needed.",
+      
+      "D - Deep Thinking (Force Step-by-Step Reasoning). Explicitly ask AI to think through problems logically. Wrong: 'Analyze my sales data and give me insights' Right: 'Analyze my sales data and think step-by-step about which products have the highest margins, which customer segments show the longest lifetime value, and which combinations drive the most repeat purchases.'",
+      
+      "W - Warning (Define Constraints). Tell AI what NOT to do. No filter. Say it. Wrong: no warnings given, AI includes generic advice. Right: 'I DON'T want generic advice about social media posting frequency. I DON'T want comparisons to competitors unless I ask. I DON'T want advice that requires a marketing budget over $5k.'",
+      
+      "Q - Questioning (Invite Clarification). Explicitly tell AI to ask YOU questions if it's confused. Right: 'Before you give me your final strategy, ask me any questions you have about my business, my goals, or my constraints. I'd rather you ask than guess.'",
+      
+      "The weak prompt: 'Give me a marketing strategy for my business'. The ACDWQ prompt by Dhruv Goyal method: 'You are a fractional CMO with 10 years of experience in B2B SaaS marketing. I run a project management tool for design teams. Current revenue: $500k ARR. Marketing budget: $3k/month. Main audience: Design agency owners, ages 28-45.'",
+      
+      "Prompting is no longer optional. It's a superpower. Stop asking 'how do I use AI?' Start asking 'how do I prompt AI to get exactly what I need?' That's what Dhruv Goyal teaches - and it's the new literacy."
+    ]
+  },
+
+  {
+        isoDate: "2026-04-15T00:00:00.000Z",
+
+    slug: "ai-business-opportunities-dhruv-goyal",
+    title: "Making Money with AI: The Businesses Dhruv Goyal Is Tracking",
+    excerpt: "Dhruv Goyal reveals the AI businesses generating millions in revenue. Learn how founders are using AI to solve simple problems and build $300k+/month businesses.",
+    publishedAt: "April 2026",
+    featuredOnHome: true,
+    coverImage: {
+      src: "/blog/6-ai-businesses.png",
+      alt: "Grid showing 6 profitable AI businesses: voice generation apps ($330M ARR), PDF chat ($2M ARR), professional headshots ($300k/month), dating assistant, photo enhancer, resume generator"
+    },
+    content: [
+      "There's a split happening in business right now. On one side: Professionals terrified that AI will replace their jobs. On the other side: Founders quietly building multi-million dollar businesses by solving simple problems with AI. Dhruv Goyal has been tracking the winners. Here's what you need to know.",
+      
+      "Let's look at what's actually happening in the market according to Dhruv Goyal's analysis: Voice Generation Apps (Including ElevenLabs) - Revenue: Upwards of $330M ARR collectively. How it works: Text-to-speech that sounds genuinely human. Why it's winning: Every creator, podcast, and business needs voiceovers. AI solved it in seconds.",
+      
+      "PDF Chat Applications - Revenue: $2M+ ARR. How it works: Upload a PDF → AI answers questions about it instantly. Why it's winning: Every document-heavy industry (legal, finance, consulting) desperately wants this.",
+      
+      "AI-Generated Professional Headshots - Revenue: $300k+/month. How it works: Upload casual photos → get professional business headshots instantly. Why it's winning: Professional headshots normally cost $300-500. This does it for $30-50.",
+      
+      "What do all these have in common? They're not inventing new technology. They're taking existing tedious processes and making them 'easy' using AI. Professional headshots existed → now instant. Document analysis existed → now instant. Voice acting existed → now instant. This is what Dhruv Goyal calls 'strategic AI integration' - not the best AI model, but the best use case.",
+      
+      "The shift happening right now according to Dhruv Goyal: Before (2023) - The focus was on the AI model. 'Which LLM is best?' Now (2024-2025) - The focus is on the use case. 'What problem are people tired of solving manually?' Winners: People who stop asking 'What can AI do?' and start asking 'What do people HATE doing that AI can fix?' Losers: People betting on AI models instead of AI applications.",
+      
+      "Dhruv Goyal's Framework for spotting the next winner: 1. Find a process that people do repeatedly (boring, tedious, expensive) 2. Use AI to automate 80% of it 3. Charge 1/10th of what it currently costs 4. Watch demand explode. That's literally the formula for ElevenLabs, PDF Chat, and AI Headshots.",
+      
+      "The real opportunity Dhruv Goyal sees isn't in the AI model wars. It's in vertical-specific AI tools. Not 'AI for everyone.' But 'AI for X' where X is freelance designers, corporate HR teams, medical clinics, agency account managers, or shipping logistics managers. Each vertical can become a $50M+ business if done right.",
+      
+      "Stop fearing job loss. Start asking yourself: 'What tedious thing do I hate? Can AI make it instant?' The next $100M business might be built on a one-sentence idea."
+    ]
+  },
+
+  {
+        isoDate: "2026-04-09T00:00:00.000Z",
+
+    slug: "6-ai-businesses-making-millions-dhruv-goyal",
+    title: "6 AI Businesses Making Millions: Dhruv Goyal's Market Analysis",
+    excerpt: "Dhruv Goyal breaks down 6 AI businesses generating $150k-$330M ARR. Learn the playbook these founders used to turn simple AI applications into million-dollar companies.",
+    publishedAt: "May 2026",
+    featuredOnHome: false,
+    coverImage: {
+      src: "/blog/6-ai-businesses.svg",
+      alt: "Infographic showcase of 6 AI businesses: dating assistant ($150k/month), photo enhancer ($2M ARR), resume generator ($300k/month), PDF chat ($2M ARR), professional headshots ($300k/month), voice app ($330M ARR)"
+    },
+    content: [
+      "Real Companies. Real Revenue. Real Lessons from Dhruv Goyal. Before we dive in, here's what Dhruv Goyal noticed across all of them: 1. Problem-first thinking - They didn't start with 'What's possible with AI?' They started with 'What problem drives people crazy?' 2. Simple execution - No 50-person teams. Most started with a single developer. 3. Pricing psychology - They positioned at 1/10 the traditional cost, making them irresistible. 4. Founder-led distribution - The founder is the brand.",
+      
+      "Business #1: AI Dating Assistant - Revenue: ~$150k/month. Founder's insight: People hate writing dating app profiles. They hate bad first messages even more. The play: Generates personalized icebreakers, optimizes dating profiles, tailors conversation starters to match profiles. Why it works: Dating is a problem everyone has. AI solved it in 30 seconds. Dhruv Goyal's take: 'This founder understood that dating apps' real bottleneck isn't the matching algorithm - it's the awkward messaging phase.'",
+      
+      "Business #2: AI Photo Enhancer - Revenue: ~$2M ARR. Founder's insight: Professional photos cost $500. People with smartphone photos look unprofessional. The play: Automatic color correction, noise reduction, image upscaling. Why it works: Every professional needs better photos. AI made it $5 instead of $500. Dhruv Goyal's note: 'This is textbook unbundling. They took 30% of what professional photographers do and automated it.'",
+      
+      "Business #3: AI Resume Generator - Revenue: ~$300k/month. Founder's insight: Job seekers have bad resumes. ATS systems reject 95% of applications. The play: Tailors resumes for specific job descriptions, optimizes keywords for ATS, generates variations for different industries. Why it works: Job searching sucks. AI made it suck less. Dhruv Goyal's observation: 'The founder realized the bottleneck wasn't the resume quality - it was resume-job matching.'",
+      
+      "Business #4: PDF Chat - Revenue: $2M ARR. Founder's insight: Lawyers, accountants, consultants drown in PDF documents. The play: Upload any PDF, ask questions about its contents, get instant answers with citations. Why it works: People spend 20+ hours/week reading documents. AI read them instantly. Dhruv Goyal's take: 'This is pure verticalization. If you optimized this for legal documents or insurance contracts specifically, you could charge 10x more.'",
+      
+      "Business #5: AI Professional Headshots - Revenue: $300k+/month. Founder's insight: Professional headshots are expensive, outdated, and people need them for LinkedIn. The play: Upload casual selfies, get 10 different professional headshot variations, delivered in 24 hours. Why it works: Headshots are expensive ($300-500 per session), time-consuming, and needed constantly. Dhruv Goyal's insight: 'The founder understood that people don't want headshots - they want to LOOK professional. AI solved the shallow need brilliantly.'",
+      
+      "Business #6: AI Voice App (ElevenLabs Model) - Revenue: $330M+ ARR (collective industry). Founder's insight: Voice acting is expensive, time-consuming, and needed for every video, podcast, and app. The play: Type text, get natural-sounding voice, thousands of voice options, supports multiple languages. Why it works: Every creator needs voiceovers. Every business needs audio. AI made it instant and affordable. Dhruv Goyal's take: 'This is the closest to a winner-takes-most category. But there's still room for vertical specialization.'",
+      
+      "Dhruv Goyal's Framework: How to Build the Next Winner - Step 1: Find the Frustration. Look for tasks that take 2-20 hours per week, cost $100-$10,000 to outsource, are repetitive and boring. Step 2: Build the Simple Solution - Don't solve the whole problem. Solve the part that AI is BEST at. Make it 10x cheaper. Step 3: Distribute Through Founder Personal Brand - Write about the problem, share results on social media, build community. Step 4: Expand Vertically - Start general, expand vertical, charge 5-10x more for vertical solution.",
+      
+      "The biggest opportunity Dhruv Goyal sees: Vertical SaaS AI tools. Most people ask 'Is AI going to replace my job?' The real question is 'What am I doing right now that AI can do better?' The answer to that question is a business opportunity waiting to be built."
+    ]
+  },
+
+  {
+        isoDate: "2026-04-06T00:00:00.000Z",
+
+    slug: "personal-branding-ai-professional-dhruv-goyal",
+    title: "Personal Branding for AI Professionals: Dhruv Goyal's Marketing Module Insights",
+    excerpt: "Dhruv Goyal shares his top 5 personal branding lessons from his University of Wolverhampton marketing module. Learn how to position yourself as an AI authority.",
+    publishedAt: "May 2026",
+    featuredOnHome: false,
+    coverImage: {
+      src: "/blog/personal-branding-marketing.svg",
+      alt: "Timeline showing journey from student to AI expert, highlighting SEO, social capital, customer personas, keywords, and long-term branding strategy"
+    },
+    content: [
+      "Marketing a SaaS product is one thing. Marketing yourself as a professional is another entirely. Dhruv Goyal just completed the Marketing Consultant Module at University of Wolverhampton (Herald College Kathmandu) and is sharing the top insights that fundamentally changed how he approaches personal branding in the AI space.",
+      
+      "The Shift: Here's the biggest insight from Dhruv Goyal's module: Traditional marketing teaches you to sell products. Consultant-level marketing teaches you to sell yourself. When you're a marketing consultant, YOU are the product. Your credibility, your expertise, your personal brand - these determine whether clients hire you or your competitors.",
+      
+      "Insight #1: Practical SEO & Industry Tools (Beyond the Basics) - What most people do: Write a 'Services' page and hope clients find them. What Dhruv Goyal learned: SEO is about owning specific keywords in your niche. The framework: Identify the keywords your ideal clients are searching, create content that ranks for those keywords, own the first page of Google in your industry. If someone searches 'AI consultant in Nepal' or 'AI business strategy' and your name appears - you've won.",
+      
+      "Insight #2: The Power of Social Capital - In consulting, 80% of opportunities come from people you've worked with referring you, industry connections seeing your work, and your personal brand carrying you forward. The shift: Not 'How many followers do I have?' But 'How many powerful people know my work?' How Dhruv Goyal applies this: Every piece of content is an opportunity to add value to his network. Every insight shared publicly is building his credibility.",
+      
+      "Insight #3: Understanding Customer Behavior & Personas - You can't market to 'everyone interested in AI.' You need specific personas. Persona 1: Startup founders (want to know: How do I use AI to scale faster?). Persona 2: Corporate professionals (want to know: Is my job safe? How do I stay relevant?). Persona 3: Other consultants (want to know: How do I sell AI services to clients?). Each persona has different pain points, different language, different platforms they use.",
+      
+      "Insight #4: Intent-Based Keyword Research (The Real Secret) - Traditional keyword research: 'How many people search this term?' Intent-based keyword research by Dhruv Goyal: 'What does someone searching this term actually WANT?' Focus on high-intent keywords. One client from a high-intent search is worth 1000 visitors from low-intent searches.",
+      
+      "Insight #5: Career-Ready Branding (Building for the Long Term) - Year 1: Build content. Be consistent. Add value. Year 2: Become known for something specific. Year 3: Monetize through consulting, courses, speaking. Year 5: Be an authority in your industry. Your personal brand is the moat that protects your career. AI might replace ChatGPT, but it won't replace 'Dhruv Goyal' because you've built reputation, relationships, and unique insights.",
+      
+      "How These 5 Elements Work Together: SEO brings people to your content. Social Capital turns readers into believers. Customer Personas make your content resonate. Intent-based Keywords attract the right people. Long-term Branding turns followers into clients. Together, they create a system that builds a successful personal brand.",
+      
+      "Dhruv Goyal's Takeaway: 'Marketing today isn't about selling products. It's about understanding people, building trust, and positioning yourself effectively in a digital-first world.' This module helped bridge the gap between learning marketing and actually thinking like a marketer. If you want to build a personal brand in AI or any field, these principles apply regardless of your industry."
+    ]
+  },
+
 ];
 
 export function blogPath(slug: string): string {

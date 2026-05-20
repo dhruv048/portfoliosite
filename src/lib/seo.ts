@@ -14,7 +14,9 @@ export const SEO_KEYWORDS = [
   "AI business consultant",
 ] as const;
 
-const DEFAULT_OG_IMAGE = "/images/IMG_0676.png";
+const DEFAULT_OG_IMAGE = "/brand-logo.png";
+const DEFAULT_OG_IMAGE_WIDTH = 944;
+const DEFAULT_OG_IMAGE_HEIGHT = 529;
 
 export function absoluteUrl(path = ""): string {
   const base = site.siteUrl.replace(/\/$/, "");
@@ -27,6 +29,8 @@ export function buildPageMetadata({
   description,
   path = "/",
   ogImage = DEFAULT_OG_IMAGE,
+  ogImageWidth = DEFAULT_OG_IMAGE_WIDTH,
+  ogImageHeight = DEFAULT_OG_IMAGE_HEIGHT,
   type = "website",
   noIndex = false,
 }: {
@@ -34,6 +38,8 @@ export function buildPageMetadata({
   description: string;
   path?: string;
   ogImage?: string;
+  ogImageWidth?: number;
+  ogImageHeight?: number;
   type?: "website" | "article";
   noIndex?: boolean;
 }): Metadata {
@@ -73,8 +79,8 @@ export function buildPageMetadata({
       images: [
         {
           url: imageUrl,
-          width: 1200,
-          height: 630,
+          width: ogImageWidth,
+          height: ogImageHeight,
           alt: `${site.name} — ${site.tagline}`,
         },
       ],
@@ -107,6 +113,8 @@ export function blogPostMetadata(post: BlogPost): Metadata {
     description: post.excerpt,
     path: blogPath(post.slug),
     ogImage: post.coverImage.src,
+    ogImageWidth: 1200,
+    ogImageHeight: 630,
     type: "article",
   });
 }
