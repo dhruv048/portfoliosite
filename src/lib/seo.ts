@@ -6,17 +6,18 @@ import { site } from "@/lib/site";
 export const SEO_KEYWORDS = [
   "Dhruv Goyal",
   "Dhruv Goyal in AI",
-  "Dhruv Goyal AI",
-  "Dhruv Goyal AI strategist",
-  "Dhruv Goyal business consultant",
-  "Dhruv in AI",
-  "AI strategist Nepal",
-  "AI business consultant",
+  "Artificial Intelligence",
+  "AI Strategy",
+  "Business Consulting",
+  "Machine Learning",
+  "AI Business",
+  "Digital Strategy",
+  "Fintech",
 ] as const;
 
 const DEFAULT_OG_IMAGE = "/brand-logo.png";
-const DEFAULT_OG_IMAGE_WIDTH = 944;
-const DEFAULT_OG_IMAGE_HEIGHT = 529;
+const DEFAULT_OG_IMAGE_WIDTH = 1200;
+const DEFAULT_OG_IMAGE_HEIGHT = 630;
 
 export function absoluteUrl(path = ""): string {
   const base = site.siteUrl.replace(/\/$/, "");

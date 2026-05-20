@@ -9,9 +9,9 @@ export const site = {
   /** Primary title — targets "Dhruv Goyal" and "Dhruv Goyal in AI" */
   title: "Dhruv Goyal | AI, Tech & Business",
   tagline: "Dhruv Goyal in AI — Business Meets Technology",
-  description:
-    "Dhruv Goyal is an AI strategist, software developer, and business consultant. Explore Dhruv Goyal in AI: strategy, machine learning, agents, and real-world AI implementation for teams and founders.",
+  description:"Dhruv Goyal is an AI enthusiast and business-focused professional with experience in business operations, fintech, digital strategy, and technology development. Dhruv combines a strong background in software development with practical expertise in business management, client relations, and strategic execution. Dhruv has worked across startups and fintech companies, making him adaptable to both technical and business-driven environments.",
   jobTitle: "AI Strategist & Business Consultant",
+  ogImage: "/brand-logo.png",
   knowsAbout: [
     "Artificial Intelligence",
     "Machine Learning",
@@ -21,6 +21,18 @@ export const site = {
     "Data Analysis",
     "Business Consulting",
   ],
+  author: "Dhruv Goyal",
+creator: "Dhruv Goyal",
+  keywords: [
+  "Dhruv Goyal",
+  "AI Strategist",
+  "Business Consultant",
+  "Artificial Intelligence",
+  "AI in Business",
+  "Machine Learning",
+  "Tech Consultant",
+  "Digital Strategy",
+],
   email: "dhruv@dhruvgoyal.com.np",
   social: {
     twitter: "https://twitter.com",
