@@ -36,7 +36,7 @@ export const blogPosts: BlogPost[] = [
 {
   slug: "marketing-consultant-module-dhruv-goyal",
   title: "How a Module Transformed My Professional Branding | Dhruv Goyal",
-  excerpt: "Dhruv Goyal shares 5 key insights from the Marketing Consultant Module at University of Wolverhampton. Learn how personal branding, SEO strategies, and buyer personas shape modern marketing careers.",
+  excerpt: "After spending susbtantial time understanding the couse, i want to share 5 key insights from the Marketing Consultant Module at University of Wolverhampton. Learning from the module how personal branding, SEO strategies, and buyer personas shape modern marketing careers.",
   publishedAt: "May 2026",
   isoDate: "2026-05-14T00:00:00.000Z",
   featuredOnHome: true,
